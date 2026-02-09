@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weekend Assignment</title>
+</head>
+<body>
+    <h1>Expense Tracker Lite</h1>
+    <div>
+        <label>Expense Name: <input type="text" id="expenseName"></label>
+        <label>Amount: <input type="number" id="expenseAmount"></label>
+        <label>Category:
+            <select id="expenseCategory">
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Bills</option>
+                <option>Shopping</option>
+                <option>Other</option>
+            </select>
+        </label>
+        <button id="addBtn">Add Expense</button>
+        <button id="clearBtn">Clear All</button>
+        <div id="error">Error</div>
+    </div>
+    <h2>Expenses</h2>
+    <ul id="expenseList"></ul>
+    <div id="summaryArea">
+        <p>Total: <span id="totalExpenses ">0</span></p>
+        <p>Items: <span id="itemsCount ">0</span></p>
+        <p>Expense: <span id="highestExpenses ">-</span></p>
+    </div>
+    <script src="expense.js"></script>
+</body>
+</html>
