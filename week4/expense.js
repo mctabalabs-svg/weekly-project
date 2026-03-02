@@ -14,9 +14,9 @@ let expenses = [];
 
 // Add Expenses
 function addExpense () {
-    const nameInput = nameInput.value;
-    const amountInput = amountInput.value;
-    const categorySelect = categorySelect.value;
+    const name = nameInput.value;
+    const amount = amountInput.value;
+    const category = categorySelect.value;
 
     errorDiv.textContent = "";
     if (name ==="" , isNaN(amount) , amount <= 0) {
@@ -28,7 +28,7 @@ function addExpense () {
 
     const expense = {name, amount, category };
     expenses.push(expense);
-}
+
     //Delete an expense
     const deleteBtn  = document.createElement("button");
     deleteBtn.textContent = "Delete";
@@ -48,7 +48,7 @@ function addExpense () {
     categorySelect.value = "Food";
 
     updateSummary();
-
+}
 // Clear All
 function clearAll() {
     expenses = [];
